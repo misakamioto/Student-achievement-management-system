@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <title>首页</title>
+</head>
+
+<body>
+    <nav>
+        <h1><i>学生管理系统</i></h1>
+        <div class="login">
+            <p><b></b></p>
+            <a href="/HTML/login.html">退出登录</a>
+        </div>
+    </nav>
+    <div class="box">
+        <div class="nav-box">
+            <ul>
+                <li class="nav-box-first nav-box_stu"><a href="javascript:;" class="nav_a">个人信息</a></li>
+                <li class="nav-box_stu"><a href="javascript:;" class="nav_a">修改登录密码</a></li>
+                <li class="nav-box_stu"><a href="javascript:;" class="nav_a req_result">成绩信息</a></li>
+            </ul>
+        </div>
+        <!-- 个人信息 -->
+        <div id="user">
+            <table>
+                <tr>
+                    <td><b>学工号：</b></td>
+                    <td><b class="stu_job_id"></b></td>
+                </tr>
+                <tr>
+                    <td><b>姓名：</b></td>
+                    <td><b class="username"></b></td>
+                </tr>
+                <tr>
+                    <td><b>登录密码：</b></td>
+                    <td><b class="password"></b></td>
+                </tr>
+            </table>
+        </div>
+        <!-- 修改密码 -->
+        <div id="password">
+            <table>
+                <tr>
+                    <td>新密码：</td>
+                    <td><input class="btn-password" type="text"></td>
+                </tr>
+                <tr>
+                    <td>确认密码：</td>
+                    <td><input class="btn-password" type="text"></td>
+                </tr>
+                <tr>
+                    <td><button class="btn-pass">确定</button></td>
+                </tr>
+            </table>
+        </div>
+        <!-- 成绩信息 学生端-->
+        <div id="result-s">
+            <table>
+                <tr>
+                    <td>语文：</td>
+                    <td class="result"></td>
+                </tr>
+                <tr>
+                    <td>数学：</td>
+                    <td class="result"></td>
+                </tr>
+                <tr>
+                    <td>英语：</td>
+                    <td class="result"></td>
+                </tr>
+            </table>
+        </div>
+        <!-- 成绩信息 教师端 -->
+        <div id="result-t">
+            <div class="input-group">
+                <span class="input-group-addon" id="sizing-addon2">学号:</span>
+                <input type="number" class="form-control input-te" aria-describedby="sizing-addon2">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon" id="sizing-addon2">姓名:</span>
+                <input type="text" class="form-control" aria-describedby="sizing-addon2">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon" id="sizing-addon2">语文:</span>
+                <input type="number" class="form-control input-te" aria-describedby="sizing-addon2">
+                <span class="input-group-addon" id="sizing-addon2">数学:</span>
+                <input type="number" class="form-control input-te" aria-describedby="sizing-addon2">
+                <span class="input-group-addon" id="sizing-addon2">英语:</span>
+                <input type="number" class="form-control input-te" aria-describedby="sizing-addon2">
+            </div>
+                <button class="btn-te">提交</button>
+        </div>
+    </div>
+    <script src="../JS/index.js"></script>
+</body>
+
+</html>

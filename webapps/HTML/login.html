@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../JS/jquery-3.6.0.min.js"></script>
+  <script src="../JS/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../CSS/index.css">
+  <title>学生成绩管理系统</title>
+</head>
+
+<body>
+  <h1>Student achievement management system</h1>
+  <h2>学生成绩管理系统</h2>
+  <div class="form">
+    <form class="form-horizontal">
+      <div class="form-group">
+        <p id="err"></p>
+        <label for="inputUsername" class="col-sm-2 control-label">用户名：</label>
+        <div class="col-sm-10">
+          <input type="username" class="form-control" id="inputStu_job_id" placeholder="学工号">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputPassword3" class="col-sm-2 control-label">密码：</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword3" placeholder="密码">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <div class="checkbox">
+            <label>
+              <input type="radio" name="type" value="教师" user_id="200"> 教师
+              <input type="radio" name="type" checked value="学生" user_id="100"> 学生
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="button" class="btn btn-default"> 登录</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src="../JS/login.js"></script>
+</body>
+
+</html>

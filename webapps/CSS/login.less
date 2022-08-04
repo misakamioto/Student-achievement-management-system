@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 98%;
+    height: 60px;
+    margin:0 auto;
+    background-color: rgb(144, 209, 173);
+    margin-top: 20px;
+    text-align: center;
+
+    h1,
+    p,
+    a {
+        display: inline-block;
+        line-height: 60px;
+    }
+
+    h1 {
+        position: relative;
+        left: 100px;
+    }
+
+    .login {
+        margin-right: 20px;
+        float: right;
+    }
+}
+
+.box {
+    width: 98%;
+    margin:0 auto;
+    height: 645px;
+    background-color: rgb(131, 255, 255);
+
+    .nav-box {
+        display: flex;
+        float: left;
+        height: 645px;
+        width: 200px;
+        background-color: rgb(199, 237, 204);
+
+        ul {
+            width: 200px;
+            list-style: none;
+
+            li {
+                width: 100%;
+                height: 30px;
+                background-color: burlywood;
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            a {
+                text-decoration: none;
+                line-height: 30px;
+                color: black
+            }
+        }
+        .nav-box-first{
+            background-color: rgb(213, 149, 64);
+        }
+    }
+    // 个人信息
+    #user {
+        display: flex;
+        // display: none;
+        float: left;
+
+        table {
+            margin-left: 450px;
+            margin-top: 50px;
+
+            tr {
+                margin-top: 30px;
+
+                td {
+                    text-align: center;
+                    width: 150px;
+                    height: 30px;
+                    background-color: rgb(176, 237, 184);
+                }
+            }
+
+        }
+
+    }
+    // 修改密码
+    #password{
+        margin-left: 600px;
+        display: flex;
+        display: none;
+
+        table{
+            margin-top: 30px;
+            tr {
+                margin-top: 30px;
+
+                td {
+                    height: 30px;
+                }
+            }
+        }
+    }
+    // 成绩信息
+    #result-s{
+        margin-left: 700px;
+        display: flex;
+        display: none;
+        table{
+            margin-top: 30px;
+            tr {
+                margin-top: 30px;
+
+                td {
+                    height: 30px;
+                }
+            }
+        }
+    }
+    #result-t{
+        
+        width: 300px;
+        height: 645px;
+        display: flex;
+        display: none;
+        margin-left: 570px;
+        flex-direction: column;
+        button{
+            margin-top: 30px;
+            margin-left: 100px;
+            width: 100px;
+        }
+        .input-group{
+            margin-top: 30px;
+            width: 300px;
+            height: 30px;
+            
+            span{
+                line-height: 30px;
+            }
+            .form-control{
+                height: 30px;
+            }
+        }
+    }
+}
